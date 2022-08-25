@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://kit.fontawesome.com/c598be8939.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/styles/style-light-theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Rubik&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <navbar>
+        <img class="logo" id="logo" src="assets/images/logo_black_Mesa de trabajo 1.png" alt="TD Campus" title="TD Campus">
+        
+        <div class="switch-theme">
+            
+            <div class="switch-theme-button" title="" id="switch-theme">
+                
+                <div class="icon-container">
+
+                    <i class="fa-solid fa-moon" id="ico"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+    </navbar>
+    
+    <div class="content">
+       
+        <h1>
+            Frase <span class="text-status">1</span> de 3
+        </h1>
+        
+        <h3 class="phrase">
+            Roberto quiere aprender aquellos deportes cuya herramienta involucra únicamente elementos accesibles como tierra, agua y manejo corporal.
+        </h3>
+        
+    </div>
+    
+    <form class="player">
+        
+        <div class="flex-mic">
+            
+            <i class="fa-solid fa-microphone first-mic"></i>
+            
+        </div>
+       
+        <div class="flex-control">
+        
+            <div class="control">
+            
+                <i class="fa-solid fa-microphone second-mic"></i>
+            
+            </div>
+        
+            <span class="current-time time">
+           
+                0:00
+            
+            </span>
+       
+            <span class="audio seek-slider" onchange="seekTo()">
+           
+                <input type="range" min="0" max="100" value="60" id="myRange" class="slider">
+            
+            </span>
+            
+            <span class="total-duration time">
+           
+                0:00
+            
+            </span>
+            
+        </div>
+
+        <div>
+
+            <span id="value">
+                
+            </span>
+
+        </div>
+        
+        <div class="selection">
+            
+            <span class="clean">
+                
+                Limpiar
+                
+            </span>
+            
+            <span class="next">
+                
+                Siguiente
+                
+            </span>
+            
+        </div>
+        
+    </form>
+    
+    <img class="wave" id="wave-image" src="assets/images/wave-light.svg" alt="">
+    
+    <footer class="status">
+
+        <div class="div-status 1 active">
+
+            <i class="fa-solid fa-circle"></i>
+
+        </div>
+
+        <div class="div-status 2">
+
+            <i class="fa-solid fa-circle"></i>
+
+        </div>
+
+        <div class="div-status 3">
+
+            <i class="fa-solid fa-circle"></i>
+
+        </div>
+
+        <div class="div-status 4">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+    </footer>
+    
+    <script src="assets/scripts/app.js" defer></script>
+    
+</body>
+</html>
