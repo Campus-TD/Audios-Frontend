@@ -13,7 +13,7 @@ body
 .wave
 {
     position: absolute;
-    transform: translateY(28vh);
+    transform: translateY(27vh);
     display: block;
     z-index: -100;
 }
@@ -273,3 +273,38 @@ input[type="range"]::-webkit-slider-thumb
 }
 
 /* footer */
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+}
+
+.status
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+.div-status
+{
+    margin: 20% 10%;
+}
+
+.fa-circle
+{
+    font-size: 2vh;
+}
+
+.fa-circle-check
+{
+    font-size: 2.2vh;
+}
+
+.active
+{
+    color: #FFF;
+}
+

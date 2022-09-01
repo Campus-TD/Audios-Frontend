@@ -1,6 +1,11 @@
 var slider = document.getElementById("myRange");
 var output = document.getElementById("value");
 var switcher = document.getElementById("switch-theme");
+var index1 = document.getElementById("div-status-1");
+var index2 = document.getElementById("div-status-2");
+var index3 = document.getElementById("div-status-3");
+var index4 = document.getElementById("div-status-4");
+
 
 output.innerHTML = slider.value;
 
@@ -36,7 +41,7 @@ switcher.addEventListener("click", function() {
     
     if (document.querySelector('link[rel="stylesheet"]').getAttribute('href') == 'assets/styles/style-light-theme.css') 
     {
-        document.getElementById('logo').setAttribute('src', 'assets')
+        document.getElementById('logo').setAttribute('src', 'assets/images/logo.png')
         document.querySelector('link[rel="stylesheet"]').removeAttribute('href', 'assets/styles/style-light-theme.css');
         document.querySelector('link[rel="stylesheet"]').setAttribute('href', 'assets/styles/style-dark-theme.css');
         document.getElementById("ico").classList.add("fa-sun");
@@ -45,6 +50,7 @@ switcher.addEventListener("click", function() {
     }
     else
     {
+        document.getElementById('logo').setAttribute('src', 'assets/images/logo_black.png')
         document.querySelector('link[rel="stylesheet"]').removeAttribute('href', 'assets/styles/style-dark-theme.css');
         document.querySelector('link[rel="stylesheet"]').setAttribute('href', 'assets/styles/style-light-theme.css');
         document.getElementById("ico").classList.add("fa-moon");
@@ -53,3 +59,78 @@ switcher.addEventListener("click", function() {
     }
 }
 );
+
+// Status   
+
+index1.addEventListener("click", function() {
+    if (document.getElementById("div-status-1").classList.contains("active"))
+    {
+
+    }
+    else {
+        document.getElementById("div-status-1").classList.remove("inactive");
+        document.getElementById("div-status-1").classList.add("active");
+        document.getElementById("div-status-2").classList.remove("active");
+        document.getElementById("div-status-2").classList.add("inactive");
+        document.getElementById("div-status-3").classList.remove("active");
+        document.getElementById("div-status-3").classList.add("inactive");
+        document.getElementById("div-status-4").classList.remove("active");
+        document.getElementById("div-status-4").classList.add("inactive");
+    }
+}
+);
+
+index2.addEventListener("click", function() {
+    if (document.getElementById("div-status-2").classList.contains("active")) 
+    {
+
+    }
+    else {
+        document.getElementById("div-status-2").classList.remove("inactive");
+        document.getElementById("div-status-2").classList.add("active");
+        document.getElementById("div-status-1").classList.remove("active");
+        document.getElementById("div-status-1").classList.add("inactive");
+        document.getElementById("div-status-3").classList.remove("active");
+        document.getElementById("div-status-3").classList.add("inactive");
+        document.getElementById("div-status-4").classList.remove("active");
+        document.getElementById("div-status-4").classList.add("inactive");
+    }
+}
+);
+
+index3.addEventListener("click", function() {
+    if (document.getElementById("div-status-3").classList.contains("active")) 
+    {
+
+    }
+    else {
+        document.getElementById("div-status-3").classList.remove("inactive");
+        document.getElementById("div-status-3").classList.add("active");
+        document.getElementById("div-status-1").classList.remove("active");
+        document.getElementById("div-status-1").classList.add("inactive");
+        document.getElementById("div-status-2").classList.remove("active");
+        document.getElementById("div-status-2").classList.add("inactive");
+        document.getElementById("div-status-4").classList.remove("active");
+        document.getElementById("div-status-4").classList.add("inactive");
+    }
+}
+);
+
+index4.addEventListener("click", function() {
+    if (document.getElementById("div-status-4").classList.contains("active")) 
+    {
+
+    }
+    else {
+        document.getElementById("div-status-4").classList.remove("inactive");
+        document.getElementById("div-status-4").classList.add("active");
+        document.getElementById("div-status-1").classList.remove("active");
+        document.getElementById("div-status-1").classList.add("inactive");
+        document.getElementById("div-status-2").classList.remove("active");
+        document.getElementById("div-status-2").classList.add("inactive");
+        document.getElementById("div-status-3").classList.remove("active");
+        document.getElementById("div-status-3").classList.add("inactive");
+    }
+}
+);
+
