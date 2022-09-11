@@ -6,7 +6,7 @@ body
     align-items: center;
     padding: 0;
     margin: 0;
-    
+    overflow: hidden;
 }
 
 .wave
@@ -84,6 +84,24 @@ navbar
     text-shadow: 0px 1px 5px #F8F6F8;
 }
 
+.container-index
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(52.5%);
+}
+
+.index
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 5% 0% 5%;
+}
+
 .content
 {
     text-align: center;
@@ -130,6 +148,28 @@ h3
 {
     font-size: 4vh;
     color: white;
+    text-align: center;
+}
+
+#recordButton
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stop
+{
+    font-size: 3vh;
+    color: white;
+    text-align: center;
+}
+
+#stopButton
+{
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .flex-control
@@ -140,6 +180,11 @@ h3
     justify-content: space-around;
     margin: auto;
     padding: 7% 2%;
+}
+
+.control-mic
+{
+    display: none;
 }
 
 .control
@@ -266,6 +311,52 @@ input[type="range"]::-webkit-slider-thumb
 .clean:hover, .next:hover
 {
     opacity: 1;
+}
+
+/* Form */
+
+.div-form
+{
+    width: 95%;
+    backdrop-filter: blur(20px);
+    border: #393B3D;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: thin;
+}
+
+.div-inputs
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: IBM Plex Sans, sans-serif;
+}
+
+.form-group
+{
+    flex: 0 0 45%;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+}
+
+.div-terms
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input-checkbox, .form-input-button
+{
+    margin-bottom: 5%;
+}
+
+.terminos
+{
+    color: #3A6DA8;
 }
 
 /* footer */

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/styles/style-light-theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Rubik&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -31,80 +31,422 @@
         </div>
     </navbar>
     
-    <div class="content">
-       
-        <h1>
-            Frase <span class="text-status">1</span> de 3
-        </h1>
+    <div class="container-index" id="control-index">
+
+        <div class="index" id="index-1">
+
+            <div class="content">
         
-        <h3 class="phrase">
-            Roberto quiere aprender aquellos deportes cuya herramienta involucra únicamente elementos accesibles como tierra, agua y manejo corporal.
-        </h3>
-        
-    </div>
-    
-    <form class="player">
-        
-        <div class="flex-mic">
-            
-            <i class="fa-solid fa-microphone first-mic"></i>
-            
-        </div>
-       
-        <div class="flex-control">
-        
-            <div class="control">
-            
-                <i class="fa-solid fa-microphone second-mic"></i>
-            
+                <h1>
+                    Frase <span class="text-status">1</span> de 3
+                </h1>
+                
+                <h3 id="phrase">
+                    Roberto quiere aprender aquellos deportes cuya herramienta involucra únicamente elementos accesibles como tierra, agua y manejo corporal.
+                </h3>
+                
             </div>
+            
+            <form class="player">
+                
+                <div class="flex-mic">
+                    
+                    <i class="fa-solid fa-microphone first-mic"></i>
+                    
+                </div>
+            
+                <div class="flex-control">
+                
+                    <div class="control control-mic" id="recordButton">
+                    
+                        <i class="fa-solid fa-microphone second-mic" id="iconchange"></i>
+                    
+                    </div>
         
-            <span class="current-time time">
-           
-                0:00
+                    <div class="control control-stop" id="stopButton">
+                    
+                        <i class="fa-solid fa-stop stop" id="iconchange"></i>
+        
+                    </div>
+                
+                    <span class="current-time time">
+                
+                        0:00
+                    
+                    </span>
             
-            </span>
-       
-            <span class="audio seek-slider" onchange="seekTo()">
-           
-                <input type="range" min="0" max="100" value="60" id="myRange" class="slider">
+                    <span class="audio seek-slider">
+                
+                        <input type="range" min="0" max="100" value="60" id="myRange" class="slider">
+                    
+                    </span>
+                    
+                    <span class="total-duration time">
+                
+                        0:00
+                    
+                    </span>
+                    
+                </div>
+        
+                <div>
+        
+                    <span id="value">
+                        
+                    </span>
+        
+                </div>
+                
+                <div class="selection">
+                    
+                    <span class="clean">
+                        
+                        Limpiar
+                        
+                    </span>
+                    
+                    <span class="next">
+                        
+                        Siguiente
+                        
+                    </span>
+                    
+                </div>
+                
+            </form>
+        </div>
+        
+        <div class="index" id="index-2">
+            <div class="content">
+        
+                <h1>
+                    Frase <span class="text-status">2</span> de 3
+                </h1>
+                
+                <h3 id="phrase">
+                    Roberto quiere aprender aquellos deportes cuya herramienta involucra únicamente elementos accesibles como tierra, agua y manejo corporal.
+                </h3>
+                
+            </div>
             
-            </span>
+            <form class="player">
+                
+                <div class="flex-mic">
+                    
+                    <i class="fa-solid fa-microphone first-mic"></i>
+                    
+                </div>
             
-            <span class="total-duration time">
-           
-                0:00
+                <div class="flex-control">
+                
+                    <div class="control control-mic" id="recordButton">
+                    
+                        <i class="fa-solid fa-microphone second-mic" id="iconchange"></i>
+                    
+                    </div>
+        
+                    <div class="control control-stop" id="stopButton">
+                    
+                        <i class="fa-solid fa-stop stop" id="iconchange"></i>
+        
+                    </div>
+                
+                    <span class="current-time time">
+                
+                        0:00
+                    
+                    </span>
             
-            </span>
-            
+                    <span class="audio seek-slider">
+                
+                        <input type="range" min="0" max="100" value="60" id="myRange" class="slider">
+                    
+                    </span>
+                    
+                    <span class="total-duration time">
+                
+                        0:00
+                    
+                    </span>
+                    
+                </div>
+        
+                <div>
+        
+                    <span id="value">
+                        
+                    </span>
+        
+                </div>
+                
+                <div class="selection">
+                    
+                    <span class="clean">
+                        
+                        Limpiar
+                        
+                    </span>
+                    
+                    <span class="next">
+                        
+                        Siguiente
+                        
+                    </span>
+                    
+                </div>
+                
+            </form>
         </div>
 
-        <div>
-
-            <span id="value">
-                
-            </span>
-
-        </div>
+        <div class="index" id="index-3">
+            <div class="content">
         
-        <div class="selection">
+                <h1>
+                    Frase <span class="text-status">3</span> de 3
+                </h1>
+                
+                <h3 id="phrase">
+                    Roberto quiere aprender aquellos deportes cuya herramienta involucra únicamente elementos accesibles como tierra, agua y manejo corporal.
+                </h3>
+                
+            </div>
             
-            <span class="clean">
+            <form class="player">
                 
-                Limpiar
-                
-            </span>
+                <div class="flex-mic">
+                    
+                    <i class="fa-solid fa-microphone first-mic"></i>
+                    
+                </div>
             
-            <span class="next">
+                <div class="flex-control">
                 
-                Siguiente
-                
-            </span>
-            
-        </div>
+                    <div class="control control-mic" id="recordButton">
+                    
+                        <i class="fa-solid fa-microphone second-mic" id="iconchange"></i>
+                    
+                    </div>
         
-    </form>
+                    <div class="control control-stop" id="stopButton">
+                    
+                        <i class="fa-solid fa-stop stop" id="iconchange"></i>
+        
+                    </div>
+                
+                    <span class="current-time time">
+                
+                        0:00
+                    
+                    </span>
+            
+                    <span class="audio seek-slider">
+                
+                        <input type="range" min="0" max="100" value="60" id="myRange" class="slider">
+                    
+                    </span>
+                    
+                    <span class="total-duration time">
+                
+                        0:00
+                    
+                    </span>
+                    
+                </div>
+        
+                <div>
+        
+                    <span id="value">
+                        
+                    </span>
+        
+                </div>
+                
+                <div class="selection">
+                    
+                    <span class="clean">
+                        
+                        Limpiar
+                        
+                    </span>
+                    
+                    <span class="next">
+                        
+                        Siguiente
+                        
+                    </span>
+                    
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="index" id="index-4">
+
+            <div class="content">
+
+                <div class="div-form">
+
+                    <form action="#">
+
+                        <h1>
+                            FORMULARIO
+                        </h1>
+
+                        <h3>
+                            Por favor llena el formulario a continuación.
+                        </h3>
+
+                        <div class="div-inputs">
+
+                            <div class="form-group">
+
+                                <div class="form-input">
     
+                                    <label for="codigo">
+                                        Código Postal
+                                    </label>
+        
+                                    <input type="number" name="codigo" id="postalCode" placeholder="12345" maxlength="5">
+                                    
+                                </div>
+                            
+                            </div>
+    
+                            <div class="form-group">
+    
+                                <div class="form-input">
+    
+                                    <label for="countries">
+                                        País
+                                    </label>
+        
+                                    <input type="text" multiple name="countries" id="country" placeholder="12345" list="country-list">
+    
+                                    <datalist id="country-list">
+    
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Algeria">Algeria</option>
+                                        <option value="México">México</option>
+    
+                                    </datalist>
+                                    
+                                </div>
+                            
+                            </div>
+    
+                            <div class="form-group">
+    
+                                <div class="form-input">
+    
+                                    <label for="states">
+                                        Estado
+                                    </label>
+        
+                                    <input type="text" multiple name="states" id="state" placeholder="Aguascalientes" list="state-list">
+    
+                                    <datalist id="state-list">
+    
+                                        <option value="Aguascalientes">Aguascalientes</option>
+                                        <option value="Baja California">Baja California</option>
+                                        <option value="Baja California Sur">Baja California Sur</option>
+                                        <option value="Campeche">Campeche</option>
+    
+                                    </datalist>
+                                    
+                                </div>
+                            
+                            </div>
+    
+                            <div class="form-group">
+    
+                                <div class="form-input">
+    
+                                    <label for="cities">
+                                        Ciudad
+                                    </label>
+        
+                                    <input type="text" multiple name="cities" id="city" placeholder="Sí" list="city-list">
+    
+                                    <datalist id="city-list">
+    
+                                        <option value="Sí">Sí</option>
+                                        <option value="No">No</option>
+                                        <option value="Sí">Sí</option>
+                                        <option value="No">No</option>
+    
+                                    </datalist>
+                                    
+                                </div>
+                            
+                            </div>
+    
+                            <div class="form-group">
+    
+                                <div class="form-input">
+    
+                                    <label for="genders">
+                                        Género
+                                    </label>
+        
+                                    <input type="text" multiple name="genders" id="gender" placeholder="Femenino" list="gender-list">
+    
+                                    <datalist id="gender-list">
+    
+                                        <option value="Femenino">Femenino</option>
+                                        <option value="Masculino">Masculino</option>
+                                        <option value="No binarie">No binarie</option>
+    
+                                    </datalist>
+                                    
+                                </div>
+                            
+                            </div>
+    
+                            <div class="form-group">
+    
+                                <div class="form-input">
+    
+                                    <label for="ages">
+                                        Edad
+                                    </label>
+        
+                                    <input type="number" name="ages" id="age" placeholder="22" maxlength="3">
+                                    
+                                </div>
+                            
+                            </div>
+
+                            <div class="div-terms">
+
+                                <div class="form-input-checkbox">
+
+                                    <input type="checkbox" name="terms" id="terms">
+
+                                    <label for="terms">
+                                        He leído y acepto los <span class="terminos">Términos y Condiciones de uso</span>
+                                    </label>
+
+                                </div>
+
+                                <button class="form-input-button">
+                                    Enviar
+                                </button>
+
+                            </div>
+                            
+                        </div>
+        
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <img class="wave" id="wave-image" src="assets/images/wave-light.svg" alt="">
     
     <footer class="status">
@@ -136,6 +478,7 @@
     </footer>
     
     <script src="assets/scripts/app.js" defer></script>
+    <script src="assets/scripts/recorder.js" defer></script>
     
 </body>
 </html>
